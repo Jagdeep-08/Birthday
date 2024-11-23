@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Slide-specific background colors */
+#slide1 {
+    position: relative;
+    overflow: hidden;
+    #unmuteButton {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 10;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #unmuteButton:hover {
+        background: rgba(255, 255, 255, 1);
+    }
+    
+}
+
+#backgroundVideo {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill ; /* Ensures the video fills the container */
+    z-index : -1; /* Sends the video behind other content */
+}
+
+#slide1 div, 
+#slide1 .buttons {
+    position: relative;
+    z-index: 1; /* Ensures content appears above the video */
+    color: white; /* Make text more readable */
+}
+
+#slide2 {
+    background: linear-gradient(135deg, lightblue, skyblue);
+}
+
+#slide3 {
+    background: linear-gradient(135deg, lavender, plum);
+}
+
+#slide4 {
+    background: linear-gradient(135deg, lightgreen, palegreen);
+}
+
+#slide5 {
+    background: linear-gradient(135deg, rgb(239, 237, 237), rgb(93, 119, 234));
+    text-align: center;
+    color: black;
+    text-decoration: solid;
+    text-wrap: balance;
+    width: 100%;
+    
+}
+#slide6 {
+    position: relative;
+    overflow: hidden;
+    #unmuteButton {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 10;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #unmuteButton:hover {
+        background: rgba(255, 255, 255, 1);
+    }
+    
+}
+
+#backgroundVideo {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill ; /* Ensures the video fills the container */
+    z-index : -1; /* Sends the video behind other content */
+}
+
+
+.slide {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(244, 11, 194);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slide:not(.hidden) {
+    display: flex;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff5c93;
+    border: none;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff3366;
+}
+
+/* Text Animations */
+#message1,
+#message2 {
+    font-size: 2rem;
+    animation: moveUp 2s ease-in-out;
+}
+
+#message1 {
+    animation-delay: 1s;
+}
+
+#message2 {
+    animation-delay: 0.5s;
+}
+
+/* Photo Titles */
+.photo-title {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #800000;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.photo-title:hover {
+    color: #ff5c93;
+}
+
+/* Small photos */
+.photo {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+/* Modal for displaying photos */
+#photoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#photoModal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#resumeButton {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #ff5c93;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resumeButton:hover {
+    background: #ff3366;
+}
+
+/* Tree Layout */
+#tree {
+    text-align :center;
+}
+
+.fruit {
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 100px;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fruit:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+#videoPlayer {
+    width: 40%;
+    height: 40%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+

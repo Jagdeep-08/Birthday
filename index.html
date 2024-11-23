@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nona</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Slide 1 -->
+        <div class="slide" id="slide1">
+            <video id="backgroundVideo">
+                <source src="assests/slide 1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="countdown">3</div>
+            <div id="message1" class="hidden">🎉❤️😘😘😘😘🤗🤗🤗Happy Birthday Nona! 🤗🤗🤗🤗😘😘😘😘🎉❤️</div>
+            <div class="buttons hidden">
+                <button id="next1">Next</button>
+            </div>
+            <button id="unmuteButton" class="hidden">🔊 play</button>
+        </div>
+        
+
+        <!-- Slide 2 -->
+        <div class="slide hidden" id="slide2">
+            <div id="message2">Let's celebrate your birthday with all the memories and birthday wishes I gathered for you.❤️</div>
+            <div class="buttons">
+                <button id="prev2">Previous</button>
+                <button id="next2">Next</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide hidden" id="slide3">
+            <div id="roadmap">
+                <p>How our journey started
+                </p>
+                <p>:(PLEASE CLICK ON THE TITLES BELOW)</p>
+                <div class="photo-titles">
+                    <p class="photo-title" data-src="assests/1.jpg">remember how our convo starts?(15/september/2020) 😏</p>
+                    <p class="photo-title" data-src="assests/2.jpg">Best message of all time i guess 😂</p>
+                    <p class="photo-title" data-src="assests/3.jpg">The D-Day (15/october/2020)💕❤️</p>
+                    <p class="photo-title" data-src="assests/school dress.jpg">first pic in your school dress after so many zidd😂😂😂😂</p>
+                    <p class="photo-title" data-src="assests/smile.jpg">jab mein tumhari smile pe fidaa huaa (UHFFFFfffff)😍😍😍😍</p>
+                    <p class="photo-title" data-src="assests/6.jpg">MERI little angry bird😘🤗 </p>
+                    <p class="photo-title" data-src="assests/7.jpg">you are my hunny bunny🤣😁</p>
+                    <p class="photo-title"  data-src="assests/8.jpg">remember this pic jab mein tumko pehchaan nahi pa raha tha 🤣🤣🤣🤣</p>
+                
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev3">Previous</button>
+                <button id="next3">Next</button>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide hidden" id="slide4">
+            <div id="tree">
+                <p>Click the fruits to watch videos from loved ones!</p>
+                <div class="fruits">
+                    <button class="fruit" data-video="assests/uncle aunty.mp4">surprise wish 1</button>
+                    <button class="fruit" data-video="assests/ayushi.mp4">surprise wish 2</button>
+                    <button class="fruit" data-video="assests/aishwarya.mp4">surprise wish 3</button>
+                    <button class="fruit" data-video="assests/SHAILESH.mp4">surprise wish 4</button>
+                    <button class="fruit" data-video="assests/">surprise wish 5</button>
+                
+                </div>
+                <video id="videoPlayer" controls class="hidden"></video>
+            </div>
+            <div class="buttons">
+                <button id="prev4">Previous</button>
+                <button id="next4">Next</button>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide hidden" id="slide5">
+            <div class="photo-titles">
+                <p class="photo-title" data-src="assests/love letter.jpg">A loving message😏</p>
+            </div>
+            <div class="buttons">
+                <button id="prev5">Previous</button>
+            </div>
+        </div>
+    </div>
+     <!-- Slide 1 -->
+     <div class="slide" id="slide6">
+        <video id="backgroundVideo" >
+            <source src="assests/slideshow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="buttons hidden">
+        </div>
+        <button id="unmuteButton" class="hidden">🔊 play</button>
+    </div>
+
+    <!-- Modal for displaying enlarged photo -->
+    <div id="photoModal">
+        <img id="modalImage" src="" alt="Enlarged Photo">
+        <button id="resumeButton">Resume</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
